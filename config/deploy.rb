@@ -3,9 +3,7 @@ lock '3.6.0'
 
 # デプロイするアプリケーション名
 set :application, 'AWS_test'
-set :rbenv_path, '/home/deploy/.rbenv' #指定するとこのパスは以下のbundleが、指定しないと$HOME配下のbundleが実行された
-set :bundle_path, './vendor/bundle'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+
 
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
