@@ -1,13 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-  gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
-  gem 'unicorn' # アプリケーションサーバのunicorn
-  gem 'mini_racer', platforms: :ruby # デプロイ時に必要
-    # gem 'ed25519 (>= 1.2, < 2.0)'
-    # gem 'bcrypt_pbkdf (>= 1.0, < 2.0)' 
-    gem 'bcrypt_pbkdf'
-    gem 'ed25519'
+ 
 ruby '2.6.5'
 
 
@@ -73,3 +67,10 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'dotenv-rails' # 開発環境で環境変数を操作するのに必要
+gem 'unicorn' # アプリケーションサーバのunicorn
+gem 'mini_racer', '~> 0.4.0' , platforms: :ruby # デプロイ時に必要
+# gem 'ed25519 (>= 1.2, < 2.0)'
+# gem 'bcrypt_pbkdf (>= 1.0, < 2.0)' 
+gem 'bcrypt_pbkdf'
+gem 'ed25519'
